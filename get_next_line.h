@@ -6,7 +6,7 @@
 /*   By: hdagdagu <hdagdagu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 15:36:02 by hdagdagu          #+#    #+#             */
-/*   Updated: 2022/10/25 15:59:16 by hdagdagu         ###   ########.fr       */
+/*   Updated: 2022/10/27 18:52:17 by hdagdagu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 #define GET_NEXT_LIEN_H
 
 char    *get_next_line(int fd);
-int	gnt_strchr(const char *s, int c);
+char	*ft_strchr(const char *s, int c);
 char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlen(const char *str);
 char	*ft_strdup(const char *s1);

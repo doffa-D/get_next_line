@@ -6,13 +6,13 @@
 /*   By: hdagdagu <hdagdagu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 18:58:59 by hdagdagu          #+#    #+#             */
-/*   Updated: 2022/10/25 16:12:05 by hdagdagu         ###   ########.fr       */
+/*   Updated: 2022/10/27 18:51:25 by hdagdagu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-int	gnt_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	int	i;
 
@@ -20,8 +20,8 @@ int	gnt_strchr(const char *s, int c)
 	while (s[i] != 0 && (unsigned char)c != s[i])
 		i++;
 	if (s[i] == (unsigned char)c)
-		return (i);
-	return (-1);
+		return ((char *) &s[i]);
+	return (0);
 }
 
 char	*ft_strjoin(char const *s1, char const *s2)
