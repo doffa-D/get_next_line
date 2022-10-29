@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hdagdagu <hdagdagu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 14:53:48 by hdagdagu          #+#    #+#             */
-/*   Updated: 2022/10/29 15:13:17 by hdagdagu         ###   ########.fr       */
+/*   Updated: 2022/10/29 15:14:23 by hdagdagu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*ft_copy(int fd, char *buf, char *backup)
 {
@@ -60,18 +60,18 @@ char	*get_next_line(int fd)
 {
 	char		*line;
 	char		*buffer;
-	static char	*backup;
+	static char	*backup[INT_MAX];
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (0);
 	buffer = (char *)malloc(sizeof(char ) * (BUFFER_SIZE + 1));
 	if (!buffer)
 		return (0);
-	line = ft_copy(fd, buffer, backup);
+	line = ft_copy(fd, buffer, backup[fd]);
 	free(buffer);
 	buffer = 0;
 	if (!line)
 		return (0);
-	backup = backup_extractor(line);
+	backup[fd] = backup_extractor(line);
 	return (line);
 }
