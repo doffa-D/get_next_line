@@ -17,12 +17,9 @@ When submitting the project, you only require the following 3 files if your not 
 # My Get_Next_Line Results
 [![hdagdagu's 42 get_next_line Score](https://badge42.vercel.app/api/v2/cl8ltkjyz00160gjuq0wtbcru/project/2844832)](https://github.com/JaeSeoKim/badge42)
 
+
 # Get_Next_Line Tester Link
 https://github.com/Tripouille/gnlTester
-
-
-
-
 
 
 
