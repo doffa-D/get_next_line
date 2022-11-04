@@ -19,3 +19,11 @@ When submitting the project, you only require the following 3 files if your not 
 
 # Get_Next_Line Tester Link
 https://github.com/Tripouille/gnlTester
+
+
+
+
+
+
+
+[![hdagdagu's 42 stats](https://badge42.vercel.app/api/v2/cl8ltkjyz00160gjuq0wtbcru/stats?cursusId=21&coalitionId=277)](https://github.com/JaeSeoKim/badge42)
